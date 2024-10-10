@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Satisfy&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Satisfy&family=Updock&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #d7dae4af;
+} */
+
+.animated {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-title {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-subtitle {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.4s; /* Delay for subtitle */
+}
+
+.animated-subtitle.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animated-date {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.8s; /* Delay for date */
+}
+
+.animated-date.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.home img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home .text .audio{
+    position: absolute;
+    top: -120%;
+    left: .5rem;
+}
+
+.home .text{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    text-shadow: 0px 0px 14px rgb(0 0 0 / 88%);
+    color: white;
+    font-size: 3rem;
+    font-family: "italic";
+
+}
+
+.plans {
+    margin-top: 5rem;
+
+    /* font-size: 3rem;
+    background: #f9f9f9;
+    background-color: #d7dae4af; */
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+/* .plans h1 {
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    text-shadow: 0px 0px 14px rgba(0, 0, 0, 1);
+}
+
+.plans .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .plans .line {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 32%;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+} */
+
+/* .plans .line:hover {
+    transform: scale(1.05);
+}
+
+.plans .line h3 {
+    display: inline-block;
+    color: #333;
+}
+
+.plans .line h3 i{
+    color: gray;
+}
+
+.plans span {
+    font-weight: bold;
+    color: #4e4b4b; 
+} */
+
+
+
+.invitation{
+    height: 210vh;
+    background: url(images/IMG_8595.JPG) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.invitation .invitation-text{
+    text-align: center;
+    margin-top: 10rem;
+    text-shadow: 0px 0px 14px rgb(0 0 0 / 88%);
+    color: white;
+    font-size: 2rem;
+    padding: 4rem;
+    line-height: 3rem;
+    font-family: "Satisfy", cursive;
+}
+
+
+.location h3{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #4e4b4b;
+    font-family: "Old Standard TT", serif;
+    text-shadow: 0px 0px 14px rgba(252, 249, 249, 0.4);
+    font-weight: 300;
+}
+
+.location .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location .links a{
+    text-align: center;
+    font-size: 1.5;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: blue;
+    width: 15%;
+    color: white;
+    margin: 1rem;
+}
+
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.count img{
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.count .text{
+    position: absolute;
+    margin-top: 6rem;
+    text-align: center;
+    color: rgb(247, 239, 234);
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: 0px 0px 14px rgb(0 0 0 / 88%);
+    font-family: "Old Standard TT", serif;
+    /* text-shadow: 2px 2px 2px rgba(105, 103, 103, 0.8); */
+}
+
+#countdown {
+    font-size: 3.5rem;
+    font-weight: 100;
+    padding: 0 2rem;
+    gap: 3rem;
+    margin-top: .5rem;
+    font-family: "Old Standard TT", serif;
+}
+
+.container span{
+    font-size: 1.7rem;
+    margin: 0 .4rem;
+    font-family: "Old Standard TT", serif;
+}
+
+
+@media (max-width: 700px) {
+    .home .text{
+        font-size: 1.5rem;
+    }
+
+    .plans img{
+        width: 100%;
+    }
+
+    .invitation .invitation-text{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .count img{
+        width: 60%;
+    }
+
+    .count .text{
+        font-size: 1.8rem;
+    }
+    
+    #countdown {
+        font-size: 2.3rem;
+    }
+    
+    .container span{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 551px){
+
+    .plans img{
+        width: 100%;
+    }
+
+    .count img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 501px){
+
+    .plans img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 431px){
+
+    .home .text{
+        font-size: 1.5rem;
+    }
+
+    .plans img{
+        width: 100%;
+    } 
+
+    .invitation .invitation-text{
+        font-size: 1.5rem;
+    }
+
+    .location .links a{
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    .count img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 421px){
+
+    .home .text{
+        font-size: 1.3rem;
+    }
+
+    .plans img{
+        width: 100%;
+    } 
+
+    .invitation .invitation-text{
+        font-size: 1.5rem;
+    }
+
+    .location .links a{
+        font-size: 1rem;
+        width: 35%;
+    }
+
+    .count img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 361px){
+
+    .home .text{
+        font-size: 1rem;
+    }
+
+    .plans img{
+        width: 100%;
+    }
+
+    .invitation .invitation-text{
+        font-size: 1.2rem;
+    }
+
+    .location .links a{
+        font-size: 1rem;
+        width: 35%;
+    }
+
+    .location h3{
+        font-size: 1.8rem;
+    }
+
+    .count img{
+        width: 105%;
+    }
+}
+
+
+@media (max-width: 351px){
+
+    .home .text{
+        font-size: 1rem;
+    }
+
+    .plans img{
+        width: 100%;
+    } 
+
+    .invitation .invitation-text{
+        font-size: 1.2rem;
+    }
+
+    .location .links a{
+        font-size: 1rem;
+        width: 35%;
+    }
+
+    .location h3{
+        font-size: 1.8rem;
+    }
+
+    .count img{
+        width: 100%;
+    }
+}
+
+
