@@ -72,7 +72,7 @@
 
 .home .text .audio{
     position: absolute;
-    top: -120%;
+    top: -80%;
     left: .5rem;
 }
 
@@ -95,7 +95,6 @@
     background: #f9f9f9;
     background-color: #d7dae4af; */
     padding: 3rem;
-    border-radius: 10px;
 }
 
 /* .plans h1 {
